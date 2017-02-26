@@ -13,3 +13,97 @@
  *= require_tree .
  *= require_self
  */
+
+
+body {
+    color: #555;
+    background: rgba(255, 0, 0, 0.2);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.note-workspace {
+}
+
+/* Control Panel */
+
+.control-panel {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.control-panel button {
+}
+
+/* Notes */
+
+.note-container {
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-around;
+
+    margin: 1em;
+
+    border: 1px solid #000;
+    border-radius: 6px;
+    opacity: 0.9;
+    width: 200px;
+    height: 200px;
+
+    background: #555;
+}
+
+.note-check {
+    align-self: flex-start;
+}
+
+.note-container label {
+}
+
+/* Note Status */
+
+.note-selected {
+    border-width: 4px;
+    opacity: 1;
+}
+
+/* Delete Button for Note */
+.note-container button.delete {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* Note Color */
+
+.note-green {
+    background: #94c894;
+}
+.note-green label {
+    color: #fff;
+}
+
+.note-yellow {
+    background: #fff799;
+}
+.note-yellow label {
+    color: #555;
+}
+
+.note-blue {
+    background: #6a91ff;
+}
+.note-blue label {
+    color: #fff;
+}
+
+.note-red {
+    background: #ff6968;
+}
+.note-red label {
+    color: #fff;
+}

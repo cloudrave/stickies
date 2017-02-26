@@ -1,0 +1,22 @@
+    sjw       _..----.._    _
+            .'  .--.    "-.(0)_
+'-.__.-'"'=:|   ,  _)_ \__ . c\'-..
+             '''------'---''---'-"
+
+I used articles on the Mozilla Developer Network to help refresh my non-library
+knowledge of JavaScript and CSS since I'm more accustomed to using libraries like
+AngularJS and SASS.
+
+I used the JetBrains WebStorm IDE to help me type up the code.
+I used the JetBrains RubyMine IDE to help write the code.
+
+I used the Underscore library, as you can see in my code.
+
+I used the jQuery library.
+
+I used StackOverflow to try to answer questions about JavaScript injection attacks, among other research.
+
+I used Ruby on Rails on the Ruby language for better server functionality.
+
+
+And the ASCII rat comes from http://ascii.co.uk/art/rat
