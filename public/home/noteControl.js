@@ -66,11 +66,12 @@ var makeNewNoteObject = function() {
 var addNote = function(options) {
   options = options || {};
   _.defaults(options, {
-    text: "",
+    label: "",
     selectNoteAfterwards: true
   });
 
   var note = makeNewNoteObject();
+  note.label = options.label;
   notes.push(note);
 
   if (options.selectNoteAfterwards) {
@@ -104,3 +105,17 @@ var setNoteLabel = function(noteID, inputTarget) {
   note.label = $(inputTarget).val();
   DataManager.saveData();
 };
+
+function addWeatherNote() {
+  var note = addNote({
+    label: "Loading weather...",
+    selectNoteAfterwards: false
+  });
+  getMyWeatherString(function(str) {
+    note.label = str;
+    refreshNoteDisplay();
+  }, function(error) {
+    alert(error);
+  });
+  return note;
+}
